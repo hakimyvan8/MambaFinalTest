@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel40"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/SignUpLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="User"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Register"
+            android:layout_toLeftOf="@+id/SignUpLogo"
+            android:layout_alignParentBottom="true"
+            android:textColor="#535353"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel40">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/SignUp_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:background="@drawable/shape_rect02"
+                android:hint="Name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:textColorHint="#616161"
+                android:drawableLeft="@drawable/ic_person" />
+
+
+            <EditText
+                android:id="@+id/BusinessEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rect02"
+                android:hint="Business Name"
+                android:drawableStart="@drawable/ic_business"
+                android:drawablePadding="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#616161"
+                android:layout_below="@+id/SignUp_Name"
+                android:drawableLeft="@drawable/ic_business" />
+
+            <EditText
+                android:id="@+id/TinNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_confirmation"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/BusinessEt"
+                android:background="@drawable/shape_rect02"
+                android:hint="Business Tin Number"
+                android:textColorHint="#616161"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/SignUp_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/TinNumber"
+                android:background="@drawable/shape_rect02"
+                android:hint="Phone Number"
+                android:textColorHint="#616161"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/SignUp_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:background="@drawable/shape_rect02"
+                android:hint="Password"
+                android:textColorHint="#616161"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:layout_below="@+id/SignUp_number"
+                android:drawableLeft="@drawable/ic_lock" />
+
+
+            <Button
+                android:id="@+id/SignUp_register"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@+id/SignUp_Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Create Account"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/registerSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/SignUp_register"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="@string/are_you_a_supplier_register_as_supplier" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

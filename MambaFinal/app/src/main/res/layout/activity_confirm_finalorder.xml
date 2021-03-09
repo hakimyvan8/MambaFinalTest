@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client.ConfirmFinalorderActivity">
+    <RelativeLayout
+        android:id="@+id/rel30"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect02"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrowback"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Location &amp; Payment Details"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/shipment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel30"
+        android:layout_marginTop="100dp"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Your Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="20dp"
+        android:textColorHint="@color/colorPrimary"
+        tools:ignore="NotSibling"
+        android:drawableLeft="@drawable/ic_person" />
+
+    <EditText
+        android:id="@+id/shipment_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_name"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Delivery Phone Number"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColorHint="@color/colorPrimary"
+        tools:ignore="NotSibling"
+        android:drawableLeft="@drawable/ic_phone" />
+
+    <EditText
+        android:id="@+id/shipment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_phone_number"
+        android:layout_marginTop="13dp"
+        android:layout_margin="5dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_location"
+        android:background="@drawable/shape_rect02"
+        android:hint="Your Home Address"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="@color/colorPrimary"
+        tools:ignore="NotSibling"
+        android:drawableLeft="@drawable/ic_location" />
+
+    <EditText
+        android:id="@+id/shipment_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_address"
+        android:layout_marginTop="100dp"
+        android:layout_margin="5dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_location"
+        android:background="@drawable/shape_rect02"
+        android:hint="Your City Name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="@color/colorPrimary"
+        tools:ignore="NotSibling"
+        android:drawableLeft="@drawable/ic_location" />
+
+    <Button
+        android:id="@+id/confirm_location"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shipment_city"
+        android:layout_alignParentRight="true"
+        android:text="confirm order"
+        android:textColor="@color/colorText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="77dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="120dp" />
+
+</RelativeLayout>
